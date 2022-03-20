@@ -17,5 +17,8 @@ class WorkflowService {
   deleteWorkflow(id) {
     return axios.delete(WORKFLOW_BASE_REST_API_URL + "/remove/" + id);
   }
+  getTasks(id) {
+    return axios.get(WORKFLOW_BASE_REST_API_URL + "/get/" + id + "/tasks");
+  }
 }
 export default new WorkflowService();

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import WorkflowService from "../services/WorkflowService";
+import WorkflowService from "../../services/WorkflowService";
 import { useNavigate, Link, useParams } from "react-router-dom";
-const AddWorkflowComponent = () => {
+const AddTaskComponent = () => {
   const [nameW, setnameW] = useState("");
   const [descriptionW, setdescriptionW] = useState("");
   const [statusW, setstatusW] = useState(0);
@@ -111,4 +111,4 @@ const AddWorkflowComponent = () => {
   );
 };
 
-export default AddWorkflowComponent;
+export default AddTaskComponent;
